@@ -1,0 +1,151 @@
+@import url(./font.css);
+
+:root {
+  --text-color: "RR";
+  --title-color: "RM";
+  --pink: #6e38f7;
+  --gray: #95a1bb;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 122px;
+}
+
+.like-maket,
+.time-maket {
+  width: 358px;
+  height: 276px;
+}
+
+.img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.like-title,
+.time-title {
+  font-family: var(--title-color);
+  margin: 10px, 10px;
+}
+
+.like-text,
+.time-text {
+  font-family: var(--text-color);
+  margin: 10px, 10px;
+}
+
+.like-btn {
+  width: 157px;
+  height: 46px;
+  margin-top: 15px;
+  color: white;
+  background-color: var(--pink);
+  border-color: var(--pink);
+  transition: 3s;
+
+  &:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+}
+
+.time-btn {
+  border: 2px, var(--pink), solid;
+  color: var(--pink);
+  width: 107px;
+  height: 46px;
+  margin-top: 15px;
+  background-color: white;
+  transition: 3s;
+
+  &:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+}
+
+
+
+/* *********************************************************************************************************************** */
+
+/* ===================== 600px ===================== */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .like-maket,
+  .time-maket {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .like-btn,
+  .time-btn {
+    margin: 15px auto 0;
+    display: block;
+  }
+}
+
+/* ===================== 450px ===================== */
+@media (max-width: 450px) {
+  .img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .like-title,
+  .time-title {
+    font-size: 22px;
+  }
+
+  .like-text,
+  .time-text {
+    font-size: 14px;
+  }
+
+  .like-btn,
+  .time-btn {
+    width: 140px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+/* ===================== 320px ===================== */
+@media (max-width: 320px) {
+  .like-title,
+  .time-title {
+    font-size: 18px;
+  }
+
+  .like-text,
+  .time-text {
+    font-size: 13px;
+  }
+
+  .like-btn,
+  .time-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
